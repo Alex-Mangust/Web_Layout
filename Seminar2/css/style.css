@@ -19,10 +19,7 @@ a {
     justify-content: center;
 }
 
-.index,
-.about,
-.register,
-.catalog {
+.menu_link {
     line-height: 20px;
     border-radius: 15%;
     color: cornflowerblue;
