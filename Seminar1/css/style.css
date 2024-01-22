@@ -15,13 +15,10 @@ html {
     color: red;
     text-decoration: none;
     border: 2px solid brown;
+    padding: 10px;
+    margin: 10px;
 }
 
-.about,
-.register,
-.catalog {
-    margin-left: 25px;
-}
 
 .title {
     margin-top: 50px;

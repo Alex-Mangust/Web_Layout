@@ -1,0 +1,190 @@
+html {
+    background: linear-gradient(135deg, rgb(21, 58, 12), rgb(179, 34, 34) 71%);
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: rgb(6, 182, 182);
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.index,
+.about,
+.register,
+.catalog {
+    line-height: 20px;
+    border-radius: 15%;
+    color: cornflowerblue;
+    text-decoration: none;
+    border: 2px solid brown;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.title {
+    margin-top: 50px;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    line-height: 0.7px;
+}
+
+.photo_title,
+.title_index,
+.title_catalog {
+    color: #e90000; 
+    /* color: #222222; Решил не указывать текущий цвет из методички, так как сливается с фоном */
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.paragraph {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987
+}
+
+.title_two_level {
+    color: coral;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+}
+
+.messengers {
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-vk {
+    margin-top: 10px;
+    color: rgb(34, 1, 180);
+    font-size: 60px;
+    margin-right: 25px;
+}
+
+.fa-youtube {
+    margin-top: 10px;
+    color: rgb(155, 6, 6);
+    font-size: 60px;
+    margin-left: 25px;
+}
+
+.photo_title {
+    display: grid;
+    justify-content: center;
+}
+
+.photo {
+    width: 550px;
+    background-color: rgb(0, 44, 0);
+    border: rgb(107, 33, 45) double 4px;
+    border-radius: 10%;
+}
+
+.photo:hover {
+    transform: scale(1.05);
+    box-shadow: 15px 15px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 600ms, transform 600ms;
+}
+
+.form_register {
+    margin: auto;
+    width: 400px;
+    border-radius: 15%;
+    background-color: black;
+    border: 5px solid red;
+    margin-top: 100px;
+    display: grid;
+    justify-content: center;
+}
+
+.text_register {
+    color: rgb(6, 182, 182);
+}
+
+.input_register {
+    color: yellowgreen;
+    background-color: rgb(150, 4, 4);
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 30px;
+    margin-left: 5px;
+}
+
+.input_register::placeholder {
+    color: red;
+}
+
+.button_register {
+    color: aqua;
+    background-color: rgb(150, 4, 4);
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.product_catalog {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.product_link {
+    color: rgb(6, 182, 182);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.product_link:hover {
+    transition: color 1.3s ease-in-out;
+    color: red;
+}
+
+.product {
+    margin-left: 12px;
+    margin-right: 12px;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rebeccapurple;
+    border-radius: 10%;
+    width: 400px;
+    height: 300px;
+}
+
+.product_description {
+    width: 200px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.product_img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10%;
+}
