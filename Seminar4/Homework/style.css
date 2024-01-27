@@ -19,8 +19,7 @@ a {
     margin-left: 373px;
     margin-right: 373px;
     margin-bottom: 84px;
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
     align-items: center;
     gap: 460px;
 }
@@ -34,9 +33,8 @@ a {
 }
 
 .link_header {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    align-items: flex-start;
     gap: 14px;
 }
 

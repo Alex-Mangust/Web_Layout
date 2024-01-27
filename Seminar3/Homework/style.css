@@ -19,25 +19,6 @@ a {
     margin-left: 373px;
     margin-right: 373px;
     margin-bottom: 84px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 460px;
-}
-
-.img_logo {
-    display: flex;
-    padding-right: 0.878px;
-    justify-content: center;
-    align-items: center;
-    gap: 14.792px;
-}
-
-.link_header {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 14px;
 }
 
 .home_header {
@@ -48,22 +29,10 @@ a {
     margin-left: 373px;
     margin-right: 373px;
     margin-bottom: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.title_content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
 }
 
 .text_content {
     width: 552px;
-    display: grid;
-    gap: 20px;
 }
 
 .title_text {
@@ -80,13 +49,6 @@ a {
     font-weight: 400;
 }
 
-.button_content {
-    display: flex;
-    align-items: center;
-    gap: 48px;
-    align-self: stretch;
-}
-
 button {
     color: #AAA;
     font-size: 16px;
@@ -98,12 +60,8 @@ button {
 }
 
 .start_button {
-    display: flex;
     width: 140px;
     padding: 16px 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
     border-radius: 56px;
     background: #F25822;
     box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
@@ -111,10 +69,6 @@ button {
 }
 
 .top_logo {
-    display: flex;
     width: 100%;
     padding: 100px 0px;
-    justify-content: center;
-    align-items: center;
-    gap: 48px;
 }
