@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: Inter;
+}
+
+a {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px;
+}
+
+.header {
+    margin-top: 40px;
+    margin-left: 373px;
+    margin-right: 373px;
+    margin-bottom: 84px;
+    max-width: 1174px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img_logo {
+    display: flex;
+    max-width: 137px;
+    max-height: 40px;
+    padding-right: 0.878px;
+    justify-content: center;
+    align-items: center;
+    gap: 14.792px;
+}
+
+.link_header {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.home_header {
+    color: #F25822;
+}
+
+.top_content {
+    margin-left: 373px;
+    margin-right: 373px;
+    margin-bottom: 100px;
+    display: flex;
+    max-width: 1174px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.title_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.text_content {
+    max-width: 552px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.title_text {
+    color: #000;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.text {
+    color: #888;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.button_content {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    align-self: stretch;
+}
+
+button {
+    width: 140px;
+    color: #AAA;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+    background: none;
+}
+
+.start_button {
+    display: flex;
+    padding: 16px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 56px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    color: #FFF;
+}
+
+.top_logo {
+    margin-left: 373px;
+    margin-right: 373px;
+    display: flex;
+    max-width: 1174px;
+    padding: 100px 0px;
+    justify-content: space-between;
+    align-items: center;
+    gap: auto;
+}
