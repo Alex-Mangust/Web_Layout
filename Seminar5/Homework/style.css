@@ -14,15 +14,21 @@ a {
     padding: 10px;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .header {
     margin-top: 40px;
-    margin-left: 373px;
-    margin-right: 373px;
+    width: 58%;
     margin-bottom: 84px;
-    max-width: 1174px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .img_logo {
@@ -38,6 +44,8 @@ a {
 .link_header {
     display: flex;
     align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 14px;
 }
 
@@ -46,13 +54,13 @@ a {
 }
 
 .top_content {
-    margin-left: 373px;
-    margin-right: 373px;
+    width: 58%;
     margin-bottom: 100px;
     display: flex;
-    max-width: 1174px;
     justify-content: space-between;
     align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .title_content {
@@ -117,12 +125,91 @@ button {
 }
 
 .top_logo {
-    margin-left: 373px;
-    margin-right: 373px;
-    display: flex;
-    max-width: 1174px;
+    width: 100%;
     padding: 100px 0px;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 48px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    gap: auto;
+}
+
+.features {
+    width: 58%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    gap: 61px;
+}
+
+.features_text, .selection_text {
+    opacity: 0.5;
+}
+
+.features_elem {
+    width: 28%;
+    display: grid;
+    gap: 25px;
+}
+
+.servises {
+    width: 58%;
+    margin-bottom: 100px;
+}
+
+.selection_title {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 24px;
+    margin-bottom: 100px;
+}
+
+.selection_text_title, .selection_text {
+    max-width: 60%;
+    margin: 0 auto; 
+}
+
+.servises_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.servises_elem {
+    display: grid;
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+.servises_img_div {
+    display: grid;
+    align-items: center;
+}
+
+.servises_img {
+    max-width: 100%;
+    margin-bottom: 32px;
+}
+
+.servises_text {
+    display: grid;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+}
+
+.servises_button {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 10px;
+    border-radius: 56px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    color: #FFF;
 }
