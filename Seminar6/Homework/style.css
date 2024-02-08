@@ -140,11 +140,15 @@ p {
 
 .product_button {
     width: 17.555555%;
-    border: 1px solid #ff6a6a;
+    outline: 1px solid #ff6a6a;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+}
+
+.product_button:active {
+    background-color: black;
 }
 
 .button_text {
@@ -156,8 +160,13 @@ p {
     color: #f26376;
 }
 
-
 @media (max-width: 900px) {
+    body {
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .logo {
         margin-left: 5%;
         gap: 42px;
@@ -257,6 +266,7 @@ p {
 }
 
 @media (max-width: 500px) {
+
     .logo {
         width: 35%;
     }
