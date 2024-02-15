@@ -1,0 +1,56 @@
+label {
+    position: relative;
+}
+
+input[id="check"] {
+    min-height: 50px;
+    min-width: 25px;
+    visibility: hidden;
+    z-index: 1;
+}
+
+
+.fa-biohazard {
+    visibility: visible;
+    font-size: 50px;
+    position: absolute;
+    right: 42px;
+    bottom: 9px;
+    z-index: 2;
+    border: 1px solid black;
+}
+
+input[id="check"] + .fa-biohazard {
+    visibility: visible;
+    color: rgb(3, 0, 1);
+    position: relative;
+}
+
+input[id="check"]:checked + .fa-biohazard {
+    visibility: hidden;
+}
+
+.fa-atom {
+    visibility: hidden;
+    font-size: 50px;
+    position: absolute;
+    z-index: 2;
+    right: 45px;
+    bottom: 5px;
+    z-index: 3;
+    border: 1px solid black;
+}
+
+input[id="check"]:checked ~ .fa-atom {
+    visibility: visible;
+    color: rgb(116, 0, 19);
+}
+
+.fa-biohazard,
+.fa-atom {
+    user-select: none; /* Предотвращаем выделение текста */
+    -webkit-user-select: none; /* Для поддержки веб-кит браузеров */
+    -moz-user-select: none; /* Для поддержки Firefox */
+    -ms-user-select: none; /* Для поддержки Internet Explorer/Edge */
+}
+
