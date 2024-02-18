@@ -1,0 +1,257 @@
+@keyframes blink-2 {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.7;
+        background-color: darkred;
+    }
+
+    50% {
+        opacity: 0.4;
+        background: red;
+    }
+
+    75% {
+        opacity: 0.7;
+        background-color: darkred;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+label {
+    position: relative;
+}
+
+input[id="check"] {
+    min-height: 50px;
+    min-width: 25px;
+    visibility: hidden;
+    z-index: 1;
+}
+
+
+.fa-biohazard {
+    visibility: visible;
+    font-size: 50px;
+    position: absolute;
+    right: 42px;
+    bottom: 9px;
+    z-index: 2;
+    border: 1px solid black;
+}
+
+input[id="check"]+.fa-biohazard {
+    visibility: visible;
+    color: rgb(3, 0, 1);
+    position: relative;
+}
+
+input[id="check"]:checked+.fa-biohazard {
+    visibility: hidden;
+}
+
+.fa-atom {
+    visibility: hidden;
+    font-size: 50px;
+    position: absolute;
+    z-index: 2;
+    right: 45px;
+    bottom: 5px;
+    z-index: 3;
+    border: 1px solid black;
+}
+
+input[id="check"]:checked~.fa-atom {
+    visibility: visible;
+    color: rgb(116, 0, 19);
+}
+
+.fa-biohazard,
+.fa-atom {
+    user-select: none;
+    /* Предотвращаем выделение текста */
+    -webkit-user-select: none;
+    /* Для поддержки веб-кит браузеров */
+    -moz-user-select: none;
+    /* Для поддержки Firefox */
+    -ms-user-select: none;
+    /* Для поддержки Internet Explorer/Edge */
+}
+
+video {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    color: red;
+}
+
+.menu__link:active {
+    color: greenyellow;
+}
+
+.menu__list:first-child {
+    text-decoration: underline;
+}
+
+.menu__list:last-child {
+    font-weight: bold;
+}
+
+.menu__list:nth-child(3) .menu__link {
+    color: orange;
+}
+
+.product {
+    width: 250px;
+    padding: 24px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.product__img {
+    background-color: forestgreen;
+    height: 150px;
+}
+
+.product::after {
+    content: "new";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 35px;
+    height: 35px;
+    background: red;
+    color: white;
+    font-size: 14px;
+    border-radius: 50%;
+}
+
+.product::before {
+    content: "sale";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: auto;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    background: orange;
+    color: white;
+    font-size: 14px;
+    border-radius: 50%;
+}
+
+svg {
+    width: 20%;
+}
+
+svg:hover {
+    transform: translate(400px, -350px) scale(1.5);
+    fill: purple;
+}
+
+svg:active {
+    fill: red;
+}
+
+.content {
+    margin-bottom: 100px;
+}
+
+.item {
+    width: 150px;
+    height: 86px;
+    background-color: forestgreen;
+    border: 1px solid #000;
+    transition: all 1s;
+}
+
+.item_1:hover {
+    transform: translateX(50px);
+    background: darkred;
+}
+
+.item_2:hover {
+    transform: translateX(70px) scale(2);
+    background: darkmagenta;
+}
+
+.item_3:hover {
+    transform: rotate(60deg) translate(60px, 30px);
+    background: darkcyan;
+}
+
+.content2 {
+    margin-top: 200px;
+    margin-left: 200px;
+    position: relative;
+    width: 150px;
+    min-height: 150px;
+}
+
+.item2 {
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    border: 1px solid #000;
+    transition: all 1s;
+    top: 0;
+}
+
+.content2:hover .item_1_2 {
+    transform: rotate(23deg) scaleY(1.6);
+    background-color: darkred;
+    border: none;
+    font-size: 0px;
+}
+
+.content2:hover .item_2_2 {
+    transform: rotate(-23deg) scaleY(1.6);
+    background-color: darkred;
+    border: none;
+    font-size: 0px;
+}
+
+.content2:hover .item_3_2 {
+    transform: rotate(67deg) scaleY(1.6);
+    background-color: darkred;
+    border: none;
+    font-size: 0px;
+}
+
+.content2:hover .item_4_2 {
+    transform: rotate(-67deg) scaleY(1.6);
+    background-color: darkred;
+    border: none;
+    font-size: 0px;
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+    background-color: purple;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-family: sans-serif;
+    font-size: 18px;
+    animation: blink-2 4s infinite linear;
+}
